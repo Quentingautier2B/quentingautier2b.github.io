@@ -1,0 +1,217 @@
+.contactTitre{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 32px;
+  color: #0081AF;
+}
+
+.wrapper {
+  width: 50%;
+  height: 50%;
+  margin: 5% auto 0 auto; 
+}
+
+.font {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+.form {
+  text-align: center; 
+  -webkit-animation: bounce 1.5s infinite;
+  -moz-animation: bounce 1.5s infinite;
+  animation: bounce 1.5s infinite;
+}
+
+.shadow{
+  box-shadow: 0px 0px 20px 5px #AAA;
+  opacity: 0.5;
+  border-radius: 100px;
+  width: 45%; 
+  margin: 40px auto 0 auto;
+  padding: 0 10px;  
+  -webkit-animation: shadow 1.5s infinite;
+	-moz-animation: shadow 1.5s infinite;
+	animation: shadow 1.5s infinite;
+}
+
+.field-in {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 70%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.name {
+  background-color: #0081AF;  
+  border-bottom: 5px solid #006488;
+}
+
+.name:hover{
+  background-color: #30C8FF;
+  border-bottom: 5px solid #179ECF;
+}
+
+.name:focus, .email:focus, .message:focus{
+  outline: none;
+  padding:15px;
+}
+
+.email {
+  background-color: #0081AF;  
+  border-bottom: 5px solid #006488;
+}
+
+.email:hover{
+  background-color: #30C8FF;
+  border-bottom: 5px solid #179ECF;
+}
+
+.message {   
+  background-color: #ffc445;
+  border-bottom: 5px solid #D39000;
+  overflow: hidden;
+  height: 100px;
+}
+
+.message:hover{
+  background-color: #FFAE00;
+  border-bottom: 5px solid #A97300;
+}
+
+.submit{
+  border-radius:5px;
+  padding:10px;
+  background-color: #ffc445;  
+  border: none;
+  border-bottom: 5px solid #D39000; 
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.submit:hover{
+  -webkit-transform: translate(0, 4px);
+	-moz-transform: translate(0, 4px);
+	transform: translate(0, 4px);
+  border-bottom: 5px solid #D39000;  
+  box-shadow: inset 0px 0px 10px 10px #FFAE00;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { 
+   color: white;
+}
+
+::-moz-placeholder { 
+   color: white; 
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+@-webkit-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    -webkit-transform: translate(0, 8px);
+	  -moz-transform: translate(0, 8px);
+	  transform: translate(0, 8px);
+  }
+}
+
+@-moz-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+	  -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+	transform: translate(0, 8px);
+  }
+}
+
+@keyframes bounce{
+  0%{
+    
+  }
+  50%{
+	   -webkit-transform: translate(0, 8px);
+    -moz-transform: translate(0, 8px);
+    transform: translate(0, 8px);
+  }
+}
+
+@-webkit-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@-mo
+	z-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+
+@keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:1280px){
+.wrapper {
+	width: 80%;
+}
+
+.field-in{
+	width: 100%;
+}
+	
+.submit{
+	width: 30%;
+}
+	
+}
+
+@media all and (max-width: 600px) {
+.wrapper {
+	width: 80%;
+}
+
+.field-in{
+	width: 100%;
+}
+	
+.submit{
+	width: 50%;
+}
+	
+}

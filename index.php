@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PPGGRDF');</script>
+<!-- End Google Tag Manager -->
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
+	<meta name="description" content="Mon site de contact/portfolio, ou vous pourrez retrouver mes créations et me contacter pour différents services." />
+	<meta name="keywords" content="Quentin, Gautier, Portfolio, graphisme, infographie, web design, photomontage, montage, vidéo, animation, dessin, motion design, jeux vidéo, game design, level design, 3D, scénario, tshirt, product design" />
+	<link rel="icon" type="image/png" href="logo.png" />
+	
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/titre.css"/>
+	<link rel="stylesheet" href="css/menu.css"/>
+	<link rel="stylesheet" href="css/skill.css">
+	<link rel="stylesheet" href="css/hobby.css"/>
+	<link rel="stylesheet" href="css/contact.css"/>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<script src="https://kit.fontawesome.com/554aedc2db.js" crossorigin="anonymous"></script>
+	
+	<title>Quentin Gautier - Game Designer et Infographiste - Portfolio</title>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54516992-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-54516992-1');
+	</script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPGGRDF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="topnav">
+<img style="width: 50px; float: left; margin: 7px 10px 0px 10px" src="img/logo.png">
+<a id ="QG" href="#Ancre0"><strong>QUENTIN GAUTIER - GRAPHIC & GAME DESIGNER</strong></a>
+<a href="#Ancre3">CONTACT</a>
+<a href="#Ancre2">RÉALISATIONS</a>
+<a href="#Ancre1">PROFIL</a>
+  
+</div>	
+
+<header id="Ancre0" class="section">
+
+
+	
+<div id="MenuBurger" class="menu bright">
+	<i class="fas fa-home fa-2x"></i>
+	<div class="profil hidden"><a href="#Ancre1"><i class="fas fa-user fa-2x"></i></a></div>
+	<div class="contact hidden"><a href="#Ancre3"><i class="fas fa-envelope fa-2x"></i></a></div>
+	<div class="portfolio hidden"><a href="#Ancre2"><i class="fas fa-star fa-2x"></i></a></div>
+</div>
+
+	<script  src="js/menu.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	
+<button id="vidpause" onclick="myFunction()">►</button>
+
+<div class="page">
+	<div id="home-news">
+		<div class="home_header">
+			<span>Bonjour, je m'appelle</span>
+			<strong>Quentin Gautier.</strong>
+		</div>
+		<div class="home_header">
+			<span>Soyez les bienvenus sur</span>
+			<strong>mon site web.</strong>
+		</div>
+		<div class="home_header">
+			<span>je suis spécialisé en</span>
+			<strong>Graphic / Game Design.</strong>
+		</div>
+	</div>
+</div>
+<script  src="js/titre.js"></script>
+	
+<div id="fond">
+</div>
+
+<script>
+var ocean = document.getElementById("fond"),
+    waveWidth = 10,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
+
+for(var i = 0; i < waveCount; i++){
+	var wave = document.createElement("div");
+	wave.className += " wave";
+	docFrag.appendChild(wave);
+	wave.style.left = i * waveWidth + "px";
+	wave.style.webkitAnimationDelay = (i/100) + "s";
+}
+
+ocean.appendChild(docFrag);
+</script>
+
+</header>
+
+<section id="Ancre1" class="section">
+
+<div class="content">
+	
+	<div class="row">
+		
+		<div id="photo">
+		<img id="photoProfile" src="img/photoprofile.png" alt="Photo">
+		</div>
+	
+		<div id="text">
+			<p>
+			Je suis un infographiste et un passionné de lecture et jeu vidéo depuis tout petit. 
+			<br><br>J'aime relier l'art, le design, la musique, l'écriture, la photographie et la scénarisation pour créer des univers fantastiques et des visuels marquants.
+			<br><br>J'ai étudié pendant 3 ans l'infographie et différents aspects des métiers du multimédia, comme le montage vidéo et le motion design. Je cherche maintenant à me développer dans l'écriture et la réalisation de jeu vidéo.
+			</p>
+		</div>
+		
+	</div>
+	
+	<div class="row">
+		
+		<div id="skills">
+
+		<div class="bar-1">
+			<div class="titleSkill">HTML / CSS</div>
+			<div class="bar" data-width="65%">
+			<div class="bar-inner">
+			</div>
+			<div class="bar-percent">65%</div>
+			</div>
+		</div>
+			
+		<div class="bar-1">
+			<div class="titleSkill">Graphic Design</div>
+			<div class="bar" data-width="85%">
+			<div class="bar-inner">
+			</div>
+			<div class="bar-percent">85%</div>
+			</div>
+		</div>
+			
+		<div class="bar-1">
+			<div class="titleSkill">Writting</div>
+			<div class="bar" data-width="90%">
+			<div class="bar-inner">
+			</div>
+			<div class="bar-percent">90%</div>
+			</div>
+		</div>
+			
+		<div class="bar-1">
+			<div class="titleSkill">Game Design</div>
+			<div class="bar" data-width="80%">
+			<div class="bar-inner">
+			</div>
+			<div class="bar-percent">80%</div>
+			</div>
+		</div>
+
+		
+		<script  src="js/skill.js"></script>
+
+		</div>
+		
+		<div id="hobby">
+			<h3>Mes hobbies</h3>
+			<div id="typePad">
+				<p class="sentence">Jeux Vidéo</p>
+				<p class="sentence">Animaux</p>
+				<p class="sentence">JdR</p>
+				<p class="sentence">Dessin</p>
+				<p class="sentence">Ecriture</p>
+				<p class="sentence">Doublage</p>
+				<p class="sentence">Roman</p>
+				<p class="sentence">Japanime</p>
+				<p class="sentence">Manga</p>
+				<p class="sentence">Voile</p>
+				<p class="sentence">Tir à l'arc</p>
+				<p class="sentence">Musique</p>
+				<p class="sentence">BD</p>
+			</div>
+  			<script src="https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"></script>
+			<script  src="js/hobby.js"></script>
+		</div>
+		
+	</div>
+		
+</div>
+	
+</section>
+
+<section id="Ancre2" class="section">
+
+<div class="content">
+		
+	<div id="myBtnContainer">
+		<button class="btn active" onclick="filterSelection('all')">Tout voir</button>
+		<button class="btn" onclick="filterSelection('dessin')">Dessins</button>
+		<button class="btn" onclick="filterSelection('montage')">Montage</button>
+		<button class="btn" onclick="filterSelection('merch')">Merch</button>
+		<button class="btn" onclick="filterSelection('jeux')">Jeux</button>
+	</div>
+
+	<div class="ligne">
+		<div class="colonne">
+			<div class="frame">
+			<img class="list merch" src="img/autremonde.jpg">
+			<div class = "details">
+			<h3>Autre-Monde Cover</h3>
+			<p>Devoir de création de couverture pour un livre de notre choix, dans le style de Soul Bass.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list jeux" src="img/foret3d.jpg">
+			<div class = "details">
+			<h3>BombRace 3D Map</h3>
+			<p>Modélisation sous UE4 d'une map pour le jeu de course BombRace.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/abstrait1.jpg">
+			<div class = "details">
+			<h3>Abstrait N°1</h3>
+			<p>Test de plusieurs brush et effet Photoshop.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/bowserwario.jpg">
+			<div class = "details">
+			<h3>Bowser et Wario</h3>
+			<p>Etude de la musculature et apprentissage du dessin et des proportions.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/abstrait2.jpg">
+			<div class = "details">
+			<h3>Abstrait N°2</h3>
+			<p>Test de plugins de fumées sur tablette graphique.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/scandola.jpg">
+			<div class = "details">
+			<h3>Scandula</h3>
+			<p>Affiche réalisé pour soulever le problème de la polution maritime.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list merch" src="img/esspressione.jpg">
+			<div class = "details">
+			<h3>EsspreSsionE</h3>
+			<p>Logo réalisé pour une boutique universitaire de vêtements.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/desert.jpg">
+			<div class = "details">
+			<h3>Illustration de desert</h3>
+			<p>Dessin sous Photoshop d'un desert dans un univers post-cataclysmique.</p>
+			</div>
+			</div>
+		</div>
+		
+		<div class="colonne">
+			<div class="frame">
+			<img class="list merch" src="img/mockupscroll.jpg">
+			<div class = "details">
+			<h3>Kakemono Uniti</h3>
+			<p>Kakemono réalisé pour l'association Uniti E-Sporting utilisé en tournoi. 
+			Réalisation dans le cadre d'un stage en tant que Streamer et Infographiste.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/femmecircle.jpg">
+			<div class = "details">
+			<h3>Circle of Life</h3>
+			<p>Projet de montage photo sur corps humain.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list jeux" src="img/SGS.JPG">
+			<div class = "details">
+			<h3>Stupid Gecko Simulator</h3>
+			<p>Jeux vidéo réalisé lors d'un Game Jam à Corte, ou le joueur incarne un gecko, dont le but est d'escalader différents graffiti présent dans la ville à l'aide de sa langue.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/katana2.jpg">
+			<div class = "details">
+			<h3>Retouche Photo N°1</h3>
+			<p>Retouche sur Lightroom d'un tanto dans le thème "Mystique".</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/katana1.jpg">
+			<div class = "details">
+			<h3>Retouche Photo N°2</h3>
+			<p>Retouche sur Lightroom d'un tanto dans le thème "Moderne".</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/lifeisstrange.jpg">
+			<div class = "details">
+			<h3>Life is Strange</h3>
+			<p>Illustration vectorielle du papillon temporel de Life is Strange.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/MangeLumiere.jpg">
+			<div class = "details">
+			<h3>Mange-Lumière</h3>
+			<p>Dessin pour le bestiaire d'un jeu vidéo en écriture, DEPTHS, se passant dans un univers mythologique sous-marin.</p>
+			</div>
+			</div>
+		</div>
+		
+		<div class="colonne">
+			<div class="frame">
+			<img class="list merch" src="img/tshirtlpmd.jpg">
+			<div class = "details">
+			<h3>T-Shirt LPMD</h3>
+			<p>T-shirt réalisé pour la licence Métier du Design dans le cadre d'un devoir.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/oc.jpg">
+			<div class = "details">
+			<h3>Original Character N°1</h3>
+			<p>Etude du corps feminin et des ombrages et apprentissage du dessin et des proportions humaines féminines.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/goldendeer.jpg">
+			<div class = "details">
+			<h3>Golden Deer</h3>
+			<p>Illustration vectoriel des différentes représentation du Cerf d'Or.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/portraitpixelart.png">
+			<div class = "details">
+			<h3>Portrait Pixel Art</h3>
+			<p>Reproduction d'un autoportrait en Pixel Art sous Photoshop.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/raisintennis.jpg">
+			<div class = "details">
+			<h3>Photomix N°1</h3>
+			<p>Montage photo sous Photoshop mélangeant un objet et un aliment dans le cadre d'un devoir.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/sunkemall.jpg">
+			<div class = "details">
+			<h3>Sunk'em all</h3>
+			<p>Affiche type "Bar Pirate Heavy Metal" réalisé après un devoir de photomontage d'environnement.</p>
+			</div>
+			</div>
+		</div>
+		
+		<div class="colonne">
+			<div class="frame">
+			<img class="list merch" src="img/ut.jpg">
+			<div class = "details">
+			<h3>Univ Television</h3>
+			<p>Logo pour le Projet Innovation de 2019 à Corte.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/susie.jpg">
+			<div class = "details">
+			<h3>Susie from Deltarune</h3>
+			<p>Fanart du personnage de Susie réalisé sous Photoshop, dans une optique d'apprentissage des proportions et des ombrages.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/trounoir.jpg">
+			<div class = "details">
+			<h3>Black Hole</h3>
+			<p>Illustration vectorielle réalisée dans le cadre d'un devoir sur le mélange des couleurs.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/sharpedo.jpg">
+			<div class = "details">
+			<h3>Falaise Sharpedo</h3>
+			<p>Fanart de la Falaise Sharpedo de Pokémon Donjon Mystère, dans une optique d'apprentissage du dessin d'environnement.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/verre1.jpg">
+			<div class = "details">
+			<h3>Retouche Photo N°3</h3>
+			<p>Retouche sur Lightroom d'un verre rempli d'eau et d'encre dans le thème "Fluide".</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list dessin" src="img/citation1.jpg">
+			<div class = "details">
+			<h3>Citation Illustrée</h3>
+			<p>Illustration réalisée dans le cadre d'un travail sur la représentation de citation littéraire.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list montage" src="img/stvergeron.jpg">
+			<div class = "details">
+			<h3>Photomontage "St Vergeron"</h3>
+			<p>Montage photo d'un décors montagneux pour un produit de notre choix.</p>
+			</div>
+			</div>
+		</div> 
+	</div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("list");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	
+</div>
+	
+</section>
+
+<footer id="Ancre3" class="section">
+
+<div class="content">
+
+	<div class="wrapper">
+		
+		<div class="contactTitre">Contactez moi !</div>
+		
+		<form method="post" class="form">
+			<input required type="text" name="nom" class="name field-in font" placeholder="Votre Nom"/>
+			<input required type="text" name="email" class="email field-in font" placeholder="Votre Mail"/>
+			<textarea required name="message" class="message field-in font" placeholder="Votre Message"></textarea> 
+			<input class="submit font" type="submit" name="submit" value="Envoyer"/>
+		</form>
+		<?php
+    // S'il y des données de postées
+    if ($_SERVER["REQUEST_METHOD"]=="POST") {
+     
+      // Variables concernant l'email
+     
+      $destinataire = "quentin.gautier0408@gmail.com"; // Adresse email du webmaster (à personnaliser)
+
+		$headers .= "From: " . $_POST["email"] . "\r\n";
+      // Pour envoyer un email HTML, l'en-tête Content-type doit être défini
+      $contenu =  "Message envoyé depuis la page Contact
+        Nom :" . $_POST["nom"] . "
+        Email :" . $_POST["email"] . "
+        Message :" . $_POST["message"] ."";
+		
+     
+      // Envoyer l'email
+      $retour = mail($destinataire, $headers, $contenu); // Fonction principale qui envoi l'email
+		if($retour) {
+            echo "<p>Votre message a bien été envoyé.</p>";
+        }
+	}
+    ?>
+		<div class="shadow"></div>
+
+	</div>
+
+<div class="footer">
+<p><i class="fab fa-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/quentin-gautier-0408/" target="_blank">LinkedIn</a>
+&nbsp;&nbsp;
+<i class="fab fa-artstation"></i>&nbsp;<a href="https://asakim.artstation.com/" target="_blank">Artstation</a>
+&nbsp;&nbsp;
+<i class="fab fa-instagram"></i>&nbsp;<a href="https://www.instagram.com/gautier.asakim.quentin/?hl=fr" target="_blank">instagram</a>
+&nbsp;&nbsp;
+<i class="fas fa-at"></i>&nbsp;<a href="mailto:quentin.gautier0408@gmail.com" target="_blank">Mail</a>
+</p>
+</div>
+
+</div>
+	
+</footer>
+	
+</body>
+</html>

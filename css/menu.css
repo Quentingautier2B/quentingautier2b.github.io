@@ -1,0 +1,100 @@
+.menu {
+	z-index: 9999;
+	position: absolute;
+	top: 10%;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: solid 1px #ffc445;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	line-height: 92px;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+.bright {
+	background-color: #FFF;
+}
+
+.dark {
+	background-color: #FFDF9A;
+}
+
+.fas, .fab {
+	color: #ffc445;
+}
+
+.profil, .contact, .portfolio {
+	position: absolute;
+	left: 10px;
+	bottom: 110%;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: solid 1px #ffc445;
+	background-color: #FFF;
+	text-align: center;
+	line-height: 74px;
+	cursor: pointer;
+	transition: all 300ms ease;
+}
+
+.contact {
+	left: 80px;
+	top: 65%;
+}
+
+.profil {
+	left: -60px;
+	top: 65%;
+}
+
+.hidden {
+	transform: scale(0);
+}
+
+.hide {
+	animation: hide 400ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.visible {
+	animation: open 400ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hide {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+@keyframes open {
+	0% {
+		transform: scale(0);
+	}
+	70% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media screen and (min-width:600px) and (max-width:1280px){
+
+}
+
+@media all and (max-width: 600px) {
+	.menu{
+		top: 15%;
+	}
+}

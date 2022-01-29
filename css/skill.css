@@ -1,0 +1,41 @@
+.titleSkill {
+	color: #0081AF;
+	font-weight: bold;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.bar {
+	width: 90%;
+	height: 35px;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	transition: all 2s linear;
+}
+
+.bar-1, .my-skills {
+	width: 80%;
+}
+
+.bar-inner {
+	width: 0;
+	height: 35px;
+	background: #0081AF;
+	border-radius: 5px 0 0 5px;
+}
+
+.bar-percent {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 18px;
+}
+
+@media all and (max-width: 600px) {
+
+.bar-percent {
+	right: -45px;
+}
+	
+}

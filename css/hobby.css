@@ -1,0 +1,30 @@
+#typePad {
+	margin: 10px auto;
+	padding: 10px 20px;
+	color: #0081AF;
+	font-size: 2em;
+	font-family: monospace;
+	text-shadow: 1px 1px 1px #FFF;
+	text-align: center;
+}
+
+#typePad .sentence {
+	display: none;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor{
+	opacity: 1;
+	animation: blink 0.7s infinite;
+}
