@@ -7,8 +7,8 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #FFF;
-	border-left: 1px solid #ffc445;
+	background: #FFF;
+	border-left: 1px solid #333333;
 }
  
 /* Handle */
@@ -18,7 +18,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFAE00; 
+  background: #222222; 
 }
 
 html{
@@ -57,7 +57,7 @@ body {
 }
 
 .wave{
-  background:#ffc445;
+  background:#333333;
   display:inline-block;
   height:80%;
   width:10px;
