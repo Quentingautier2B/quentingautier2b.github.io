@@ -142,7 +142,7 @@ body {
 
 #text p{
 	padding: 30px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: #F2F2F2;
 }
 
@@ -164,7 +164,7 @@ body {
 }
 
 #hobby h3{
-	font-size: 1.2em;
+	font-size: 1.5em;
 	color: #333333;
 }
 
@@ -187,12 +187,12 @@ body {
 }
 
 .btn:hover {
-	background-color: #FFDE97;
+	background-color: #808080;
 }
 
 .btn.active {
-	background-color: #ffc445;
-	color: white;
+	background-color: #333333;
+	color: #ffc445;
 }
 
 .ligne {
@@ -272,32 +272,32 @@ body {
 	width: 100%;
 	height: 30px;
 	padding-top: 10px;
-	background-color: #ffc445;
-	color: #fff;
+	background-color: #222222;
+	color: #ffc445;
 }
 
 .footer .fab, .footer .fas {
-	color: #fff;
+	color: #ffc445;
 }
 
 .footer a:link {
 	text-decoration: none;
-	color: #fff;
+	color: #ffc445;
 }
 
 .footer a:visited {
 	text-decoration: none;
-	color: #fff;
+	color: #ffc445;
 }
 
 .footer a:hover {
 	text-decoration: underline;
-	color: #fff;
+	color: #ffc445;
 }
 
 .footer a:active {
 	text-decoration: underline;
-	color: #fff;
+	color: #ffc445;
 }
 
 @media screen and (min-width:600px) and (max-width:1280px){
