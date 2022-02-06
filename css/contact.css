@@ -4,7 +4,7 @@
   text-align: center;
   padding-bottom: 10px;
   font-size: 32px;
-  color: #0081AF;
+  color: #ffc445;
 }
 
 .wrapper {
@@ -42,7 +42,6 @@
   display: block;
   margin: 10px auto;
   padding: 10px;
-  border-radius: 5px;
   border: none;
   width: 70%;
   -webkit-transition: all 0.5s ease 0s;
@@ -51,13 +50,11 @@
 }
 
 .name {
-  background-color: #0081AF;  
-  border-bottom: 5px solid #006488;
+  background-color: #ffc445;  
 }
 
 .name:hover{
-  background-color: #30C8FF;
-  border-bottom: 5px solid #179ECF;
+  background-color: #ffae00;
 }
 
 .name:focus, .email:focus, .message:focus{
@@ -66,25 +63,21 @@
 }
 
 .email {
-  background-color: #0081AF;  
-  border-bottom: 5px solid #006488;
+  background-color: #ffc445;  
 }
 
 .email:hover{
-  background-color: #30C8FF;
-  border-bottom: 5px solid #179ECF;
+  background-color: #ffae00;
 }
 
 .message {   
-  background-color: #ffc445;
-  border-bottom: 5px solid #D39000;
+  background-color: #333333;
   overflow: hidden;
   height: 100px;
 }
 
 .message:hover{
-  background-color: #FFAE00;
-  border-bottom: 5px solid #A97300;
+  background-color: #808080;
 }
 
 .submit{
