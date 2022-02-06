@@ -13,7 +13,7 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffc445;
+  background: #333333;
 }
 
 /* Handle on hover */
@@ -62,10 +62,10 @@ body {
   height:80%;
   width:10px;
   position:absolute;
-  -webkit-animation-name:             dostuff; 
-  -webkit-animation-duration:         5s; 
-  -webkit-animation-iteration-count:  infinite;
-  -webkit-transition-timing-function: ease-in-out;
+  -webkit-animation-name:dostuff; 
+  -webkit-animation-duration:5s; 
+  -webkit-animation-iteration-count:infinite;
+  -webkit-transition-timing-function:ease-in-out;
 }
 @-webkit-keyframes dostuff{
   0%{
@@ -85,8 +85,6 @@ body {
 	position: fixed;
 	z-index: 9999;
   	background-color: #333333;
-	border-bottom: 5px solid #222222;
-	border-radius: 0 0 5px 5px;
 }
 
 .topnav a {
