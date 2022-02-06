@@ -145,12 +145,17 @@ body {
 	color: #333333;
 }
 
-#skills {
+#logiciels {
 	display: flex;
 	align-items: center;
 	width: 65%;
 	margin: 10px;
 	padding: 15px;
+}
+
+#logiciels h3 {
+	font-size: 1.5em;
+	color: #333333;
 }
 
 #hobby {
