@@ -89,7 +89,7 @@ body {
 
 .topnav a {
   float: right;
-  color: #f2f2f2;
+  color: #ffc445;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -127,51 +127,41 @@ body {
 	width: 30%;
 	margin: 10px;
 	padding: 15px;
-	background-color: #ffc445;
-	border-bottom: 5px solid #D39000;
-	border-radius: 5px;
 }
 
 #photoProfile{
 	width: 80%;
 }
 
-#text{
+#text {
 	width: 50%;
 	margin: 10px;
 	padding: 15px;
-	background-color: #ffc445;
-	border-bottom: 5px solid #D39000;
-	border-radius: 5px;
+	background-color: #333333;
 }
 
 #text p{
 	padding: 30px;
 	font-size: 1.5em;
-	color: #333333;
-	text-shadow: 1px 1px 1px #FFF;
+	color: #F2F2F2;
 }
 
-#skills{
+#skills {
 	display: flex;
 	align-items: center;
 	width: 65%;
 	margin: 10px;
 	padding: 15px;
-	background-color: #ffc445;
-	border-bottom: 5px solid #D39000;
-	border-radius: 5px;
+	background-color: #333333;
 }
 
-#hobby{
+#hobby {
 	align-items: center;
 	text-align: center;
 	width: 15%;
 	margin: 10px;
 	padding: 15px;
-	background-color: #ffc445;
-	border-bottom: 5px solid #D39000;
-	border-radius: 5px;
+	background-color: #333333;
 }
 
 #hobby h3{
