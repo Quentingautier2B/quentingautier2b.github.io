@@ -146,7 +146,6 @@ body {
 }
 
 #logiciels {
-	display: flex;
 	align-items: center;
 	width: 65%;
 	margin: 10px;
@@ -160,6 +159,7 @@ body {
 
 .logologiciel{
 	width:100px;
+	margin: 10px;
 }
 
 #hobby {
