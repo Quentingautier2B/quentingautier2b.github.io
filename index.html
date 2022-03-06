@@ -41,318 +41,326 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPGGRDF"
-				height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPGGRDF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-	<div class="topnav">
-		<img style="width: 50px; float: left; margin: 7px 10px 0px 10px" src="img/logo.png">
-		<a id="QG" href="#Ancre0"><strong>QUENTIN GAUTIER - GRAPHIC & GAME DESIGNER</strong></a>
-		<a href="">CONTACT (en construction)</a>
-		<a href="#Ancre2">RÉALISATIONS</a>
-		<a href="#Ancre1">PROFIL</a>
+<div class="topnav">
+<img style="width: 50px; float: left; margin: 7px 10px 0px 10px" src="img/logo.png">
+<a id ="QG" href="#Ancre0"><strong>QUENTIN GAUTIER - GRAPHIC & GAME DESIGNER</strong></a>
+<a href="">CONTACT (en construction)</a>
+<a href="#Ancre2">RÉALISATIONS</a>
+<a href="#Ancre1">PROFIL</a>
+  
+</div>	
 
+<header id="Ancre0" class="section">
+
+
+	
+<div id="MenuBurger" class="menu bright">
+	<i class="fas fa-home fa-2x"></i>
+	<div class="profil hidden"><a href="#Ancre1"><i class="fas fa-user fa-2x"></i></a></div>
+	<div class="contact hidden"><a href="#Ancre3"><i class="fas fa-envelope fa-2x"></i></a></div>
+	<div class="portfolio hidden"><a href="#Ancre2"><i class="fas fa-star fa-2x"></i></a></div>
+</div>
+
+	<script  src="js/menu.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	
+<button id="vidpause" onclick="myFunction()">►</button>
+
+<div class="page">
+	<div id="home-news">
+		<div class="home_header">
+			<span>Bonjour, je m'appelle</span>
+			<strong>Quentin Gautier.</strong>
+		</div>
+		<div class="home_header">
+			<span>Soyez les bienvenus sur</span>
+			<strong>mon portfolio.</strong>
+		</div>
+		<div class="home_header">
+			<span>je suis étudiant en</span>
+			<strong>Game Design.</strong>
+		</div>
 	</div>
+</div>
+<script  src="js/titre.js"></script>
+	
+<div id="fond">
+</div>
 
-	<header id="Ancre0" class="section">
+<script>
+var ocean = document.getElementById("fond"),
+    waveWidth = 10,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
 
+for(var i = 0; i < waveCount; i++){
+	var wave = document.createElement("div");
+	wave.className += " wave";
+	docFrag.appendChild(wave);
+	wave.style.left = i * waveWidth + "px";
+	wave.style.webkitAnimationDelay = (i/100) + "s";
+}
 
+ocean.appendChild(docFrag);
+</script>
 
-		<div id="MenuBurger" class="menu bright">
-			<i class="fas fa-home fa-2x"></i>
-			<div class="profil hidden"><a href="#Ancre1"><i class="fas fa-user fa-2x"></i></a></div>
-			<div class="contact hidden"><a href="#Ancre3"><i class="fas fa-envelope fa-2x"></i></a></div>
-			<div class="portfolio hidden"><a href="#Ancre2"><i class="fas fa-star fa-2x"></i></a></div>
-		</div>
-
-		<script src="js/menu.js"></script>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-		<button id="vidpause" onclick="myFunction()">►</button>
-
-		<div class="page">
-			<div id="home-news">
-				<div class="home_header">
-					<span>Bonjour, je m'appelle</span>
-					<strong>Quentin Gautier.</strong>
-				</div>
-				<div class="home_header">
-					<span>Soyez les bienvenus sur</span>
-					<strong>mon portfolio.</strong>
-				</div>
-				<div class="home_header">
-					<span>je suis étudiant en</span>
-					<strong>Game Design.</strong>
-				</div>
-			</div>
-		</div>
-		<script src="js/titre.js"></script>
-
-		<div id="fond">
-		</div>
-
-		<script>
-			var ocean = document.getElementById("fond"),
-				waveWidth = 10,
-				waveCount = Math.floor(window.innerWidth / waveWidth),
-				docFrag = document.createDocumentFragment();
-
-			for (var i = 0; i < waveCount; i++) {
-				var wave = document.createElement("div");
-				wave.className += " wave";
-				docFrag.appendChild(wave);
-				wave.style.left = i * waveWidth + "px";
-				wave.style.webkitAnimationDelay = (i / 100) + "s";
-			}
-
-			ocean.appendChild(docFrag);
-		</script>
-
-	</header>
+</header>
 
 	<section id="Ancre2" class="section">
 
-		<div class="content">
+<div class="content">
+		
+	<div id="myBtnContainer">
+		<button class="btn active" onclick="filterSelection('all')">Tout voir</button>
+		<button class="btn" onclick="filterSelection('jeux')">Jeux</button>
+		<button class="btn" onclick="filterSelection('perso')">Personnel</button>
+		<button class="btn" onclick="filterSelection('entreprise')">Entreprise</button>
+	</div>
 
-			<div id="myBtnContainer">
-				<button class="btn active" onclick="filterSelection('all')">Tout voir</button>
-				<button class="btn" onclick="filterSelection('jeux')">Jeux</button>
-				<button class="btn" onclick="filterSelection('perso')">Personnel</button>
-				<button class="btn" onclick="filterSelection('entreprise')">Entreprise</button>
+	<div class="ligne">
+		<div class="colonne">
+			<div class="frame">
+			<img class="list perso" src="img/autremonde.jpg">
+			<div class = "details">
+			<h3>Autre-Monde Cover</h3>
+			<p>Devoir de création de couverture pour un livre de notre choix, dans le style de Soul Bass.</p>
 			</div>
-
-			<div class="ligne">
-				<div class="colonne">
-					<div class="frame">
-						<img class="list perso" src="img/autremonde.jpg">
-						<div class="details">
-							<h3>Autre-Monde Cover</h3>
-							<p>Devoir de création de couverture pour un livre de notre choix, dans le style de Soul Bass.</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list jeux" src="img/foret3d.jpg">
-						<div class="details">
-							<h3>BombRace 3D Map</h3>
-							<p>Modélisation sous UE4 d'une map pour le jeu de course BombRace.</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list entreprise" src="img/esspressione.jpg">
-						<div class="details">
-							<h3>EsspreSsionE</h3>
-							<p>Logo réalisé pour une boutique universitaire de vêtements.</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list jeux" src="img/Biomes.jpg">
-						<div class="details">
-							<h3>Biomes</h3>
-							<p>
-								Jeu de construction de monde à base de biomes qui peuvent s'étendre et fusionner entre eux. J'ai travaillé sur le Gameplay, la DA et la 3D.
-								<br /><br /> <a href="https://observatoire.itch.io/biomes" target="_blank">Lien vers le téléchargement</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="colonne">
-					<div class="frame">
-						<img class="list entreprise" src="img/mockupscroll.jpg">
-						<div class="details">
-							<h3>Kakemono Uniti</h3>
-							<p>
-								Kakemono réalisé pour l'association Uniti E-Sporting utilisé en tournoi.
-								Réalisation dans le cadre d'un stage en tant que Streamer et Infographiste.
-							</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list jeux" src="img/SGS.JPG">
-						<div class="details">
-							<h3>Stupid Gecko Simulator</h3>
-							<p>
-								Jeux vidéo réalisé lors d'un Game Jam à Corte, ou le joueur incarne un gecko, dont le but est d'escalader différents graffiti présent dans la ville à l'aide de sa langue. J'ai travaillé sur l'intégralité de la DA et sur le Level Design.
-								<br /><br /> <a href="https://www.youtube.com/watch?v=8_tUq8IbQ48" target="_blank">Lien vers la vidéo</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="colonne">
-					<div class="frame">
-						<img class="list perso" src="img/tshirtlpmd.jpg">
-						<div class="details">
-							<h3>T-Shirt LPMD</h3>
-							<p>T-shirt réalisé pour la licence Métier du Design dans le cadre d'un devoir.</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list jeux" src="img/GodCorp.jpg">
-						<div class="details">
-							<h3>God Corporation</h3>
-							<p>
-								Jeux De société de deck building et d'affrontement en 1v1 avec deck commun, basé sur les dieux de différentes mythologie dans un milieu plus moderne. J'ai travaillé sur l'équilibrage et le design des cartes.
-								<br /><br /> <a href="https://studio.ican-design.fr/god-corporation-game-design-01/" target="_blank">Lien vers la page du projet</a>
-							</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list jeux" src="img/ProjetAutoRunner.jpg">
-						<div class="details">
-							<h3>Auto Runner Concept</h3>
-							<p>
-								Jeux vidéo réalisé lors d'une semaine thématique à l'ICAN, Auto Runner sur un travail autour du Level Design. J'ai travaillé sur l'intégralité du projet.
-								<br /><br /> <a href="https://www.youtube.com/watch?v=DdjrSNRCFuA" target="_blank">Lien vers la vidéo</a>
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="colonne">
-					<div class="frame">
-						<img class="list entreprise" src="img/ut.jpg">
-						<div class="details">
-							<h3>Univ Television</h3>
-							<p>Logo pour le Projet Innovation de 2019 à Corte.</p>
-						</div>
-					</div>
-					<div class="frame">
-						<img class="list jeux" src="img/SinkFlip.png">
-						<div class="details">
-							<h3>Sink'N'Flip</h3>
-							<p>
-								Jeux vidéo réalisé lors d'une semaine thématique à l'ICAN, Flipper numérique de Boss Fight sur le thème des pirates. J'ai travaillé sur la DA, la 3D et sur le Level Design.
-								<br /><br /> <a href="https://www.youtube.com/watch?v=N-9f8Amjz9s" target="_blank">Lien vers la vidéo</a>
-							</p>
-						</div>
-					</div>
-				</div>
 			</div>
-			<script>
-				filterSelection("all")
-				function filterSelection(c) {
-					var x, i;
-					x = document.getElementsByClassName("list");
-					if (c == "all") c = "";
-					for (i = 0; i < x.length; i++) {
-						w3RemoveClass(x[i], "show");
-						if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-					}
-				}
-
-				function w3AddClass(element, name) {
-					var i, arr1, arr2;
-					arr1 = element.className.split(" ");
-					arr2 = name.split(" ");
-					for (i = 0; i < arr2.length; i++) {
-						if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
-					}
-				}
-
-				function w3RemoveClass(element, name) {
-					var i, arr1, arr2;
-					arr1 = element.className.split(" ");
-					arr2 = name.split(" ");
-					for (i = 0; i < arr2.length; i++) {
-						while (arr1.indexOf(arr2[i]) > -1) {
-							arr1.splice(arr1.indexOf(arr2[i]), 1);
-						}
-					}
-					element.className = arr1.join(" ");
-				}
-
-				var btnContainer = document.getElementById("myBtnContainer");
-				var btns = btnContainer.getElementsByClassName("btn");
-				for (var i = 0; i < btns.length; i++) {
-					btns[i].addEventListener("click", function () {
-						var current = document.getElementsByClassName("active");
-						current[0].className = current[0].className.replace(" active", "");
-						this.className += " active";
-					});
-				}
-			</script>
-
+			<div class="frame">
+			<img class="list jeux" src="img/foret3d.jpg">
+			<div class = "details">
+			<h3>BombRace 3D Map</h3>
+			<p>Modélisation sous UE4 d'une map pour le jeu de course BombRace.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list entreprise" src="img/esspressione.jpg">
+			<div class = "details">
+			<h3>Esspressione</h3>
+			<p>Logo réalisé pour une boutique universitaire de vêtements.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list jeux" src="img/Biomes.jpg">
+			<div class = "details">
+			<h3>Biomes</h3>
+			<p>Jeu de construction de monde à base de biomes qui peuvent s'étendre et fusionner entre eux. J'ai travaillé sur le Gameplay, la DA et la 3D.
+			<br /><br /> <a href="https://observatoire.itch.io/biomes" target="_blank">Lien vers le téléchargement</a></p>
+			</div>
+			</div>
 		</div>
-
-	</section>
-
-	<section id="Ancre1" class="section">
-
-		<div class="content">
-
-			<div class="row">
-
-				<div id="photo">
-					<img id="photoProfile" src="img/photoprofile.jpg" alt="Photo">
-				</div>
-
-				<div id="text">
-					<p>
-						Je suis étudiant en Game Design à l'ICAN Paris et un passionné de cinéma et de jeu vidéo depuis tout petit.
-						<br><br>J'aime relier les mécaniques, l'art, la musique et la scénarisation pour créer des univers fantastiques et marquants.
-						<br><br>J'ai également étudié pendant 3 ans l'infographie et différents aspects des métiers du multimédia à l'Université de Corse, comme le montage vidéo et le motion design. J'ai pu, durant mon parcours professionnel, travailler dans différentes entreprises,
-						comme Knap, une start-up niçoise développant un caddie connecté, ou encore Uniti E-sport, une structure corse versée vers l'e-sport.
-						<br><br>Mes principales forces sont mon autonomie et ma capacité a être flexible peut importe le projet grâce à mes diverses connaissances, aussi bien en Game Design qu'en modélisation 3D ou en conception d'assets 2D et d'UI. Ayant une formation de chef de
-						projet multimédia, je suis capable de prendre des décisions importantes et diriger une équipe tout en connaissant les possibilitées et limites des différents pôles au sein du projet.
-					</p>
-				</div>
-
+		
+		<div class="colonne">
+			<div class="frame">
+			<img class="list entreprise" src="img/mockupscroll.jpg">
+			<div class = "details">
+			<h3>Kakemono Uniti</h3>
+			<p>Kakemono réalisé pour l'association Uniti E-Sporting utilisé en tournoi. 
+			Réalisation dans le cadre d'un stage en tant que Streamer et Infographiste.</p>
 			</div>
-
-			<div class="row">
-
-				<div id="logiciels">
-					<h3>Mes logiciels</h3>
-					<img class="logologiciel" src="img/LogoPS.png" alt="PS">
-					<img class="logologiciel" src="img/LogoAI.png" alt="AI">
-					<img class="logologiciel" src="img/LogoAE.png" alt="AE">
-					<img class="logologiciel" src="img/Logounity.png" alt="UNITY">
-					<img class="logologiciel" src="img/Logoblender.png" alt="BLENDER">
-					<img class="logologiciel" src="img/LogoHTML.png" alt="HTML">
-				</div>
-
-				<div id="hobby">
-					<h3>Mes hobbies</h3>
-					<div id="typePad">
-						<p class="sentence">Speedrun</p>
-						<p class="sentence">Biologie</p>
-						<p class="sentence">JdR</p>
-						<p class="sentence">Dessin</p>
-						<p class="sentence">Ecriture</p>
-						<p class="sentence">Doublage</p>
-						<p class="sentence">Japanime</p>
-						<p class="sentence">Voile</p>
-						<p class="sentence">Tir à l'arc</p>
-						<p class="sentence">Théorie de la musique</p>
-						<p class="sentence">Plongée</p>
-					</div>
-					<script src="https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"></script>
-					<script src="js/hobby.js"></script>
-				</div>
-
 			</div>
-
+			<div class="frame">
+			<img class="list jeux" src="img/SGS.JPG">
+			<div class = "details">
+			<h3>Stupid Gecko Simulator</h3>
+			<p>Jeux vidéo réalisé lors d'un Game Jam à Corte, ou le joueur incarne un gecko, dont le but est d'escalader différents graffiti présent dans la ville à l'aide de sa langue. J'ai travaillé sur l'intégralité de la DA et sur le Level Design.
+			<br /><br /> <a href="https://www.youtube.com/watch?v=8_tUq8IbQ48" target="_blank">Lien vers la vidéo</a></p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list perso" src="img/Evasion.jpg">
+			<div class = "details">
+			<h3>Evasion OCT</h3>
+			<p>Site Web réalisé pour le tournoi de bande dessinée Evasion à l'occasion de leur quatrième itération.</p>
+			<br /><br /> <a href="http://evasion-oct.fr" target="_blank">Lien vers le site d'Evasion</a></p>
+			</div>
+			</div>
 		</div>
+		
+		<div class="colonne">
+			<div class="frame">
+			<img class="list perso" src="img/tshirtlpmd.jpg">
+			<div class = "details">
+			<h3>T-Shirt LPMD</h3>
+			<p>T-shirt réalisé pour la licence Métier du Design dans le cadre d'un devoir.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list jeux" src="img/GodCorp.jpg">
+			<div class = "details">
+			<h3>God Corporation</h3>
+			<p>Jeux De société de deck building et d'affrontement en 1v1 avec deck commun, basé sur les dieux de différentes mythologie dans un milieu plus moderne. J'ai travaillé sur l'équilibrage et le design des cartes. 
+			<br /><br /> <a href="https://studio.ican-design.fr/god-corporation-game-design-01/" target="_blank">Lien vers la page du projet</a></p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list jeux" src="img/ProjetAutoRunner.jpg">
+			<div class = "details">
+			<h3>Auto Runner Concept</h3>
+			<p>Jeux vidéo réalisé lors d'une semaine thématique à l'ICAN, Auto Runner sur un travail autour du Level Design. J'ai travaillé sur l'intégralité du projet.
+			<br /><br /> <a href="https://www.youtube.com/watch?v=DdjrSNRCFuA" target="_blank">Lien vers la vidéo</a></p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list entreprise" src="img/Knap.jpg">
+			<div class = "details">
+			<h3>Knap</h3>
+			<p>Alternance réalisé dans la startup Knap, développant un caddie connecté. J'ai travaillé sur le site web de l'entreprise, et j'ai réalisé la majorité des visuels et des interfaces utilisateurs et tutoriels présents sur le caddie.
+			<br /><br /> <a href="https://knap.fr/#/" target="_blank">Lien vers le site de Knap</a></p>
+			</div>
+			</div>
+		</div>
+		
+		<div class="colonne">
+			<div class="frame">
+			<img class="list entreprise" src="img/ut.jpg">
+			<div class = "details">
+			<h3>Univ Television</h3>
+			<p>Logo pour le Projet Innovation de 2019 à Corte.</p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list jeux" src="img/SinkFlip.png">
+			<div class = "details">
+			<h3>Sink'N'Flip</h3>
+			<p>Jeux vidéo réalisé lors d'une semaine thématique à l'ICAN, Flipper numérique de Boss Fight sur le thème des pirates. J'ai travaillé sur la DA, la 3D et sur le Level Design.
+			<br /><br /> <a href="https://www.youtube.com/watch?v=N-9f8Amjz9s" target="_blank">Lien vers la vidéo</a></p>
+			</div>
+			</div>
+			<div class="frame">
+			<img class="list perso" src="img/Door.jpg">
+			<div class = "details">
+			<h3>The Door of Wind and Earth</h3>
+			<p>Projet en binôme de Game Art et de narration, basé sur une légende orientale. Je me suis occupé de toute la narration et de l'écriture.</p>
+			</div>
+			</div>
+		</div> 
+	</div>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("list");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
-	</section>
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
 
-	<footer>
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
 
-		<div class="footer">
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	
+</div>
+	
+</section>
+
+<section id="Ancre1" class="section">
+
+<div class="content">
+	
+	<div class="row">
+		
+		<div id="photo">
+		<img id="photoProfile" src="img/photoprofile.jpg" alt="Photo">
+		</div>
+	
+		<div id="text">
 			<p>
-				<i class="fab fa-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/quentin-gautier-0408/" target="_blank">LinkedIn</a>
-				&nbsp;&nbsp;
-				<i class="fab fa-instagram"></i>&nbsp;<a href="https://www.instagram.com/asakim_artwork/?hl=fr" target="_blank">instagram</a>
-				&nbsp;&nbsp;
-				<i class="fas fa-at"></i>&nbsp;<a href="mailto:quentin.gautier0408@gmail.com" target="_blank">Mail</a>
+			Je suis étudiant en Game Design à l'ICAN Paris et un passionné de cinéma et de jeu vidéo depuis tout petit. 
+			<br><br>J'aime relier les mécaniques, l'art, la musique et la scénarisation pour créer des univers fantastiques et marquants.
+			<br><br>J'ai également étudié pendant 3 ans l'infographie et différents aspects des métiers du multimédia à l'Université de Corse, comme le montage vidéo et le motion design. J'ai pu, durant mon parcours professionnel, travailler dans différentes entreprises,
+			comme Knap, une start-up niçoise développant un caddie connecté, ou encore Uniti E-sport, une structure corse versée vers l'e-sport.
+			<br><br>Mes principales forces sont mon autonomie et ma capacité a être flexible peut importe le projet grâce à mes diverses connaissances, aussi bien en Game Design qu'en modélisation 3D ou en conception d'assets 2D et d'UI. Ayant une formation de chef de
+			projet multimédia, je suis capable de prendre des décisions importantes et diriger une équipe tout en connaissant les possibilitées et limites des différents pôles au sein du projet.
 			</p>
 		</div>
+		
+	</div>
+	
+	<div class="row">
+		
+		<div id="logiciels">
+			<h3>Mes logiciels</h3>
+			<img class="logologiciel" src="img/LogoPS.png" alt="PS">
+			<img class="logologiciel" src="img/LogoAI.png" alt="AI">
+			<img class="logologiciel" src="img/LogoAE.png" alt="AE">
+			<img class="logologiciel" src="img/Logounity.png" alt="UNITY">
+			<img class="logologiciel" src="img/Logoblender.png" alt="BLENDER">
+			<img class="logologiciel" src="img/LogoHTML.png" alt="HTML">
+		</div>
+		
+		<div id="hobby">
+			<h3>Mes hobbies</h3>
+			<div id="typePad">
+				<p class="sentence">Speedrun</p>
+				<p class="sentence">Biologie</p>
+				<p class="sentence">JdR</p>
+				<p class="sentence">Dessin</p>
+				<p class="sentence">Ecriture</p>
+				<p class="sentence">Doublage</p>
+				<p class="sentence">Japanime</p>
+				<p class="sentence">Voile</p>
+				<p class="sentence">Tir à l'arc</p>
+				<p class="sentence">Théorie de la musique</p>
+				<p class="sentence">Plongée</p>
+			</div>
+  			<script src="https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"></script>
+			<script  src="js/hobby.js"></script>
+		</div>
+		
+	</div>
+		
+</div>
+	
+</section>
 
-	</footer>
+<footer>
 
+<div class="footer">
+<p><i class="fab fa-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/quentin-gautier-0408/" target="_blank">LinkedIn</a>
+&nbsp;&nbsp;
+<i class="fab fa-instagram"></i>&nbsp;<a href="https://www.instagram.com/asakim_artwork/?hl=fr" target="_blank">instagram</a>
+&nbsp;&nbsp;
+<i class="fas fa-at"></i>&nbsp;<a href="mailto:quentin.gautier0408@gmail.com" target="_blank">Mail</a>
+</p>
+</div>
+	
+</footer>
+	
 </body>
 </html>
