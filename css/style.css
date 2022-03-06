@@ -232,7 +232,7 @@ body {
 }
 
 .frame {
-	text-align: center;
+	text-align: Justify;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -398,6 +398,10 @@ body {
 .colonne {
 	flex: 100%;
 	max-width: 100%;
+}
+
+.frame .details p {
+	font-size : 0.8em;
 }
 	
 }
