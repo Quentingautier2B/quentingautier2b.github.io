@@ -348,6 +348,10 @@ body {
 	flex: 45%;
 	max-width: 45%;
 }
+
+.frame .details p {
+	font-size : 0.8em;
+}
 	
 }
 
