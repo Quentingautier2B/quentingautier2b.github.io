@@ -269,7 +269,7 @@ body {
 .frame .details p {
 	text-align: center;
 	margin: 0px 15px;
-	font-size : 1em;
+	font-size : 0.9em;
 }
 
 .footer {
@@ -352,7 +352,7 @@ body {
 }
 
 .frame .details p {
-	font-size : 0.8em;
+	font-size : 0.9em;
 }
 	
 }
@@ -407,7 +407,7 @@ body {
 }
 
 .frame .details p {
-	font-size : 0.8em;
+	font-size : 0.9em;
 }
 	
 }
