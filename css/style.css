@@ -232,7 +232,7 @@ body {
 }
 
 .frame {
-	text-align: Justify;
+	text-align: center;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -267,6 +267,7 @@ body {
 }
 
 .frame .details p {
+	text-align: center;
 	margin: 0px 15px;
 	font-size : 1em;
 }
